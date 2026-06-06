@@ -1,139 +1,329 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Intel Sustainability Timeline</title>
+
+  <link
+    id="bootstrapCSS"
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+  />
+
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
-  <header class="hero">
-    <div class="intel-logo">intel</div>
+<body class="bg-light text-dark">
+  <a href="#main-content" class="visually-hidden-focusable btn btn-primary position-absolute top-0 start-0 m-3 z-3">
+    Skip to main content
+  </a>
 
-    <h1>Sustainability Through the Ages</h1>
+  <header class="hero text-white text-center d-flex align-items-center">
+    <div class="container py-5">
+      <p class="display-5 fw-bold mb-3" aria-label="Intel logo">intel</p>
 
-    <div class="hero-line"></div>
+      <h1 class="display-2 fw-bold text-uppercase">
+        Sustainability Through the Ages
+      </h1>
 
-    <p>
-      Explore Intel’s journey through time and discover how innovation,
-      responsible manufacturing, and environmental goals are shaping a more
-      sustainable future for technology and our planet.
-    </p>
+      <div class="bg-info rounded-pill mx-auto my-4 hero-line"></div>
+
+      <p class="lead fw-semibold mx-auto w-75">
+        Explore Intel's journey through time, discovering how innovation
+        has helped shape a more sustainable future for technology and our planet.
+      </p>
+    </div>
   </header>
 
-  <main>
-    <section class="intro">
-      <h2>Intel’s Sustainability Journey</h2>
-      <p>
-        From early semiconductor innovation to ambitious environmental goals,
-        Intel’s story shows how technology companies can use scale, design,
-        and responsible operations to reduce their impact.
-      </p>
+  <main id="main-content">
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center fw-bold text-primary mb-3">
+          Intel's Sustainability Timeline
+        </h2>
+
+        <p class="text-center text-secondary mb-4">
+          Scroll through the timeline and hover over each card to learn more.
+        </p>
+
+        <div class="timeline-track d-flex flex-column flex-md-row gap-4 overflow-auto pb-4">
+          <article class="timeline-card card shadow border-0" tabindex="0">
+            <img
+              src="1-card.jpg"
+              class="card-img-top"
+              width="300"
+              height="175"
+              loading="lazy"
+              decoding="async"
+              alt="Illustration representing Intel being founded"
+            />
+
+            <div class="card-body">
+              <p class="fs-2 fw-bold text-primary mb-1">1968</p>
+              <h3 class="h5 fw-bold">Intel Founded</h3>
+              <p class="text-secondary">
+                Intel begins its journey as a semiconductor company.
+              </p>
+              <p class="details">
+                This milestone represents the beginning of Intel's role in modern computing and processor manufacturing.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-card card shadow border-0" tabindex="0">
+            <img
+              src="2-card.jpg"
+              class="card-img-top"
+              width="300"
+              height="175"
+              loading="lazy"
+              decoding="async"
+              alt="Illustration of the Intel 8086 processor"
+            />
+
+            <div class="card-body">
+              <p class="fs-2 fw-bold text-primary mb-1">1978</p>
+              <h3 class="h5 fw-bold">8086 Processor</h3>
+              <p class="text-secondary">
+                Intel introduces a processor that helps shape personal computing.
+              </p>
+              <p class="details">
+                The 8086 processor became an important milestone in Intel's technology history.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-card card shadow border-0" tabindex="0">
+            <img
+              src="3-card.jpg"
+              class="card-img-top"
+              width="300"
+              height="175"
+              loading="lazy"
+              decoding="async"
+              alt="Illustration of the Intel 386 processor"
+            />
+
+            <div class="card-body">
+              <p class="fs-2 fw-bold text-primary mb-1">1985</p>
+              <h3 class="h5 fw-bold">386 Processor</h3>
+              <p class="text-secondary">
+                Intel introduces stronger performance and multitasking.
+              </p>
+              <p class="details">
+                This processor shows how innovation continued to improve computing power over time.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-card card shadow border-0" tabindex="0">
+            <img
+              src="4-card.jpg"
+              class="card-img-top"
+              width="300"
+              height="175"
+              loading="lazy"
+              decoding="async"
+              alt="Illustration representing Intel's sustainability strategy"
+            />
+
+            <div class="card-body">
+              <p class="fs-2 fw-bold text-primary mb-1">2020</p>
+              <h3 class="h5 fw-bold">RISE Strategy</h3>
+              <p class="text-secondary">
+                Intel expands its focus on responsibility and sustainability.
+              </p>
+              <p class="details">
+                Intel's RISE strategy focuses on responsible, inclusive, and sustainable growth.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-card card shadow border-0" tabindex="0">
+            <img
+              src="5-card.jpg"
+              class="card-img-top"
+              width="300"
+              height="175"
+              loading="lazy"
+              decoding="async"
+              alt="Illustration representing Intel's 2030 sustainability goals"
+            />
+
+            <div class="card-body">
+              <p class="fs-2 fw-bold text-primary mb-1">2030</p>
+              <h3 class="h5 fw-bold">Sustainability Goals</h3>
+              <p class="text-secondary">
+                Intel works toward major goals for energy, water, and waste.
+              </p>
+              <p class="details">
+                These goals include renewable electricity, water conservation, and waste reduction.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section class="timeline" aria-label="Intel sustainability timeline">
+    <section class="py-5 bg-white">
+      <div class="container">
+        <h2 class="text-center fw-bold text-primary mb-4">
+          Sustainability Focus Areas
+        </h2>
 
-      <article class="card" tabindex="0">
-        <img src="1.jpg" alt="Illustration representing Intel's founding" />
-        <div class="card-content">
-          <p class="year">1968</p>
-          <h3>Intel Founded</h3>
-          <p class="summary">Intel begins its journey as a semiconductor company.</p>
-          <p class="details">
-            This milestone represents the beginning of Intel’s role in shaping modern computing and chip manufacturing.
-          </p>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <article class="card h-100 border-0 shadow-sm text-center p-3">
+              <div class="card-body">
+                <h3 class="h4 fw-bold">
+                  <span aria-hidden="true">📊</span> RISE Strategy
+                </h3>
+
+                <p class="text-secondary">
+                  Intel's RISE strategy connects technology innovation with responsibility, inclusion, and sustainability.
+                </p>
+
+                <button
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#learnMoreModal"
+                  data-title="RISE Strategy"
+                  data-text="Intel's RISE strategy focuses on responsible, inclusive, and sustainable growth."
+                >
+                  Learn More
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="card h-100 border-0 shadow-sm text-center p-3">
+              <div class="card-body">
+                <h3 class="h4 fw-bold">
+                  <span aria-hidden="true">🌐</span> Global Commitment
+                </h3>
+
+                <p class="text-secondary">
+                  Intel works to reduce emissions and improve energy efficiency across its products and operations.
+                </p>
+
+                <button
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#learnMoreModal"
+                  data-title="Global Commitment"
+                  data-text="Because Intel works at a global scale, even small improvements can create a large impact."
+                >
+                  Learn More
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="card h-100 border-0 shadow-sm text-center p-3">
+              <div class="card-body">
+                <h3 class="h4 fw-bold">
+                  <span aria-hidden="true">💧</span> Water and Waste
+                </h3>
+
+                <p class="text-secondary">
+                  Intel supports water conservation, recycling, and waste reduction in its manufacturing process.
+                </p>
+
+                <button
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#learnMoreModal"
+                  data-title="Water and Waste"
+                  data-text="Water conservation and waste reduction are important parts of sustainable semiconductor manufacturing."
+                >
+                  Learn More
+                </button>
+              </div>
+            </article>
+          </div>
         </div>
-      </article>
-
-      <article class="card" tabindex="0">
-        <img src="2.jpg" alt="Illustration of a computer chip" />
-        <div class="card-content">
-          <p class="year">1971</p>
-          <h3>First Microprocessor</h3>
-          <p class="summary">Intel introduces a major innovation in computing.</p>
-          <p class="details">
-            Microprocessors helped make computing smaller, faster, and more accessible, changing how people use technology.
-          </p>
-        </div>
-      </article>
-
-      <article class="card" tabindex="0">
-        <img src="3.jpg" alt="Illustration representing sustainability goals" />
-        <div class="card-content">
-          <p class="year">1995</p>
-          <h3>Sustainability Goals Begin</h3>
-          <p class="summary">Intel begins setting long-term environmental goals.</p>
-          <p class="details">
-            Intel’s sustainability work includes reducing emissions, managing water responsibly, minimizing waste, and improving energy use.
-          </p>
-        </div>
-      </article>
-
-      <article class="card" tabindex="0">
-        <img src="4.jpg" alt="Illustration of water recycling and chip manufacturing" />
-        <div class="card-content">
-          <p class="year">2000s</p>
-          <h3>Water Conservation</h3>
-          <p class="summary">Intel invests in water recycling and conservation.</p>
-          <p class="details">
-            Semiconductor manufacturing requires careful resource management, so water conservation is an important part of Intel’s sustainability work.
-          </p>
-        </div>
-      </article>
-
-      <article class="card" tabindex="0">
-        <img src="5.jpg" alt="Illustration representing a company sustainability strategy" />
-        <div class="card-content">
-          <p class="year">2020</p>
-          <h3>RISE Strategy Expands</h3>
-          <p class="summary">Sustainability expands beyond manufacturing.</p>
-          <p class="details">
-            Intel’s approach grows to include business units, product life cycles, energy efficiency, and broader environmental impact.
-          </p>
-        </div>
-      </article>
-
-      <article class="card" tabindex="0">
-        <img src="6.jpg" alt="Illustration representing net-zero greenhouse gas emissions" />
-        <div class="card-content">
-          <p class="year">2022</p>
-          <h3>Net-Zero Commitment</h3>
-          <p class="summary">Intel commits to net-zero operations emissions by 2040.</p>
-          <p class="details">
-            This goal focuses on reducing Scope 1 and Scope 2 greenhouse gas emissions across Intel’s global operations.
-          </p>
-        </div>
-      </article>
-
-      <article class="card" tabindex="0">
-        <img src="https://placehold.co/600x350/38A169/FFFFFF?text=2030+Targets" alt="Illustration representing renewable energy and waste reduction" />
-        <div class="card-content">
-          <p class="year">2030</p>
-          <h3>2030 Sustainability Targets</h3>
-          <p class="summary">Intel aims for major progress in energy, water, and waste.</p>
-          <p class="details">
-            Intel’s 2030 targets include renewable electricity, net-positive water, and zero waste to landfill.
-          </p>
-        </div>
-      </article>
-
-      <article class="card" tabindex="0">
-        <img src="https://placehold.co/600x350/0B1F3A/FFFFFF?text=2040+Future" alt="Illustration representing a sustainable technology future" />
-        <div class="card-content">
-          <p class="year">2040</p>
-          <h3>Net-Zero Future</h3>
-          <p class="summary">Intel works toward net-zero greenhouse gas emissions.</p>
-          <p class="details">
-            This future milestone represents Intel’s long-term plan to lower the environmental footprint of its global operations.
-          </p>
-        </div>
-      </article>
-
+      </div>
     </section>
 
-    <p class="hint">Scroll to view timeline | Hover or tap cards to learn more</p>
+    <section class="py-5">
+      <div class="container">
+        <div class="card border-0 shadow mx-auto col-lg-8">
+          <div class="card-body p-4 p-md-5 text-center">
+            <h2 class="fw-bold text-primary">
+              Subscribe to Our Sustainability Newsletter
+            </h2>
+
+            <p id="formHelp" class="text-secondary">
+              Enter your email to receive updates about Intel sustainability and innovation.
+            </p>
+
+            <form id="subscribeForm" class="mx-auto text-start col-md-8" aria-describedby="formHelp" novalidate>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Enter your email address"
+                  required
+                />
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                Subscribe
+              </button>
+
+              <p id="formMessage" class="fw-bold mt-3" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <footer class="bg-primary text-white text-center py-4">
+    <p class="mb-0">
+      © 2026 Intel Sustainability Timeline Project. Built with accessibility and inclusive design in mind.
+    </p>
+  </footer>
+
+  <div
+    class="modal fade"
+    id="learnMoreModal"
+    tabindex="-1"
+    aria-labelledby="modalTitle"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="modalTitle">Learn More</h2>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <div class="modal-body" id="modalBody"></div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
